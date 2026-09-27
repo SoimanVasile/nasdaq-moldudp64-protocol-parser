@@ -12,7 +12,7 @@ endif()
 
 add_compile_options(-Wall -Wextra -march=native)
 
-add_executable(${PROJECT_NAME} ./src/main.cpp)
+add_executable(${PROJECT_NAME} ./src/main.cpp ./src/network.cpp)
 
 target_include_directories(${PROJECT_NAME}
                            PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
